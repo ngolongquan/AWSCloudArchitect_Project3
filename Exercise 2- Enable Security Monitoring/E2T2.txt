@@ -1,0 +1,10 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+- IAM role allows full access S3 bucket
+- S3 buckets does not enable encryption.
+- Security Group allows all traffics (inbound/outbound) from any IP
+- Application Load Balancer is not configued HTTPS redirection
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+- Limit resources and coressponding actions for IAM role on S3 buckets
+- Enable encrytion for S3 bucket which contains sensitive data (Eg: S3 secret) 
+- Limit the traffic (inbound/outbound) for Security Group (for cidr: update IP range ;for port: just allow 80/443 for public internet access) 
+- Application Load Balancer needs to configued HTTPS redirection

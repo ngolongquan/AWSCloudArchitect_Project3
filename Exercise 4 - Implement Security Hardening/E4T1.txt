@@ -1,0 +1,7 @@
+# Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+ - Remove SSH Vulnerability on the Application Instance (Disable SSH password login on the application server instance)
+ - Apply Network Controls to Restrict Application Server Traffic
+ - Least Privilege Access to S3 by update the IAM policy for the instance profile role used by the web application instance to only allow read access to the free recipes S3 bucket
+# Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+ - Enable Server-side Encryption to the S3 Bucket
+ - Use lease privilege access by update the IAM policy for the instance profile role to allow access to specific buckets only

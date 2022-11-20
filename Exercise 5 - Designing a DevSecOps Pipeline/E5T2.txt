@@ -1,0 +1,20 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+- Terrascan
+- Regula
+### Example vulnerability
+- Log of resource does not enable
+- Server Side Encryption does not enabled
+##Scan AMI’s or containers for OS vulnerabilities
+- Ansible
+### Example vulnerability
+- Password Authentication is turning on of SSH login
+##Scan an AWS environment for cloud configuration vulnerabilities
+- AWS Config
+- AWS Inspector
+- GuardDuty
+### Example vulnerability
+- Assign full access for IAM role
+- TCP port 23 which is associated with 'Telnet' is reachable from the internet
+- Brute force attack to exploit SSH ports facing the internet and an insecure configuration on the server

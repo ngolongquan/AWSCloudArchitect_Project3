@@ -1,0 +1,6 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+- In my case, GuardDuty does not collect any data , so that I cannot describe it. You can check the image named "E3T1_guardduty" into my folder.
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+- Because GuardDuty does not collect any data, therefore I cannot explain exactly what happened. However, I've just research on the documentation page at address https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_concepts.html.
+  So I think the issue which related to the brute force attack will be in one of Data sources: AWS CloudTrail event logs, VPC flow logs, DNS logs, EKS audit logs, and EBS volumes.
+  GuardDuty will collect data from data sources above.

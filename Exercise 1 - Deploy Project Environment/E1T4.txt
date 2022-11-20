@@ -1,0 +1,7 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+# Poor practice 1
+- Role of IAM has full access to S3 bucket (Action: 's3:*', Resource: '*') that violate least privilege principle. 
+# Poor practice 2
+- The security group named WebAppSG is poor security
+  + Ingress: Allow connection from any IP (public internet)
+  + Egress: Allow connection from any IP (public internet) and has multiple port (22, 80, 5000)
